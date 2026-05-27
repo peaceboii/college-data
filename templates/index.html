@@ -39,7 +39,31 @@
 <body>
 
     <h2>Student Form</h2>
+    {% with messages = get_flashed_messages(with_categories=true) %}
 
+    {% if messages %}
+
+        {% for category, message in messages[-1:] %}
+
+            {% if category == 'error' %}
+
+                <p style="color:red;">
+                    {{ message }}
+                </p>
+
+            {% else %}
+
+                <p style="color:green;">
+                    {{ message }}
+                </p>
+
+            {% endif %}
+
+        {% endfor %}
+
+    {% endif %}
+
+    {% endwith %}
     <form method="POST">
 
         <label>Student Name</label><br><br>
