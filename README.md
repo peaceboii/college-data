@@ -89,6 +89,8 @@ python app.py
 
 Then open:
 - `http://127.0.0.1:5000/`
+<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/56887b9a-ec58-479c-9212-c83762ad1646" />
+<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/dd249e4b-60e1-449a-887a-74d280d066be" />
 
 ## Routes
 - `GET /` - Show form and student list
